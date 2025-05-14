@@ -1,6 +1,6 @@
 # The URL the site will be built for
 #base_url = "https://brain4bi.org"
-base_url = "https://brain4bi.github.io/brain4bi_site"
+base_url = "https://brain4bi.github.io"
 title = "Brain4BI"
 description = "Аналитика в чате — где фраза становится диаграммой"
 default_language = "ru"
