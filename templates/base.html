@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Brain4BI{% endblock title %}</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            lucide.createIcons();
+        });
+    </script>
+</head>
+<body>
+{% block content %}{% endblock content %}
+{% block scripts %}{% endblock scripts %}
+
+</body>
+</html>

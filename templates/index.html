@@ -1,0 +1,276 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header class="nav-header">
+    <a href="/" class="nav-logo">
+        <img src="/assets/logo_mint.png" alt="Brain4BI" class="logo-image">
+    </a>
+    <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <i data-lucide="menu" class="lucide-icon" style="width: 24px; height: 24px; margin: 0;"></i>
+    </div>
+    <nav class="nav-links" id="nav-links">
+        <a href="#how-it-works">Как это работает</a>
+        <a href="#use-cases">Сценарии</a>
+        <a href="#demo">Попробовать</a>
+    </nav>
+</header>
+<section class="hero-section">
+    <div class="hero-text">
+        <h1 class="hero-title">
+            Аналитика в чате —<br>где фраза становится диаграммой
+        </h1>
+        <p class="hero-description">
+            BI-помощник, который понимает естественный язык и превращает запрос в результат
+        </p>
+        <a href="/demo" class="button-main hero-button">
+            Попробовать демо
+        </a>
+    </div>
+    <div class="hero-image">
+        <img src="/assets/chart-main.png" alt="График выручки" class="chart-image">
+    </div>
+</section>
+
+<section id="how-it-works" class="steps-section">
+    <h2 class="section-title">Простой процесс анализа данных в три шага</h2>
+    <div class="section-divider"></div>
+    <div class="steps-container">
+        <div class="icon-block">
+            <img src="/assets/source.png"/>
+            <h3>Шаг 1. Укажите, откуда взять данные</h3>
+            <p>Вы можете выбрать папку на компьютере, подключиться к базе данных или корпоративному хранилищу.</p>
+        </div>
+        <div class="icon-block">
+            <img src="/assets/ask.png"/>
+            <h3>Шаг 2. Задайте вопрос</h3>
+            <p>Сформулируйте вопрос простыми словами — как будто пишете коллеге. Никаких специальных терминов не нужно.</p>
+        </div>
+        <div class="icon-block">
+            <img src="/assets/result.png"/>
+            <h3>Шаг 3. Получите понятный результат</h3>
+            <p>Таблица, график и ключевые выводы. Плюс рекомендации, что ещё можно проанализировать.</p>
+        </div>
+    </div>
+</section>
+
+<section id="use-cases" class="use-cases-section">
+    <h2 class="section-title">Сценарии использования</h2>
+    <div class="section-divider"></div>
+    <div class="use-cases-container">
+        <div class="use-case">
+            <img src="/assets/sales.png"/>
+            <h3>Продажи</h3>
+            <p>Сравните регионы, категории и периоды. Узнайте, что влияет на выручку и рост.</p>
+        </div>
+        <div class="use-case">
+            <img src="/assets/marketing.png"/>
+            <h3>Маркетинг</h3>
+            <p>Посмотрите, какие кампании работают. Отследите влияние каналов и поведение клиентов.</p>
+        </div>
+        <div class="use-case">
+            <img src="/assets/fin.png"/>
+            <h3>Финансы</h3>
+            <p>Оцените прибыль, расходы и рентабельность. Найдите отклонения и узкие места.</p>
+        </div>
+        <div class="use-case">
+            <img src="/assets/adhoc.png"/>
+            <h3>Ad-hoc</h3>
+            <p>Быстрые вопросы — быстрые ответы. Без отчётов, SQL и настройки визуализаций.</p>
+        </div>
+    </div>
+</section>
+
+<section class="why-section">
+    <h2 class="section-title">Почему это удобно</h2>
+    <div class="section-divider"></div>
+    <div class="why-convenient-container">
+        <div class="why-convenient-image">
+            <img src="/assets/why.png" alt="Иллюстрация помощника Brain4BI">
+        </div>
+        <div class="why-convenient-content">
+            <ul>
+                <li>
+                    <i data-lucide="text-cursor-input" class="lucide-icon why-icon"></i>
+                    <div>
+                        <strong>Без SQL и формул</strong>
+                        <p>Просто задайте вопрос — и получите результат.</p>
+                    </div>
+                </li>
+                <li>
+                    <i data-lucide="zap" class="lucide-icon why-icon"></i>
+                    <div>
+                        <strong>Инсайты за секунды</strong>
+                        <p>График, таблица или вывод появляются мгновенно.</p>
+                    </div>
+                </li>
+                <li>
+                    <i data-lucide="target" class="lucide-icon why-icon"></i>
+                    <div>
+                        <strong>Сделан для аналитики</strong>
+                        <p>Обучен решать реальные задачи, а не болтать.</p>
+                    </div>
+                </li>
+                <li>
+                    <i data-lucide="lightbulb" class="lucide-icon why-icon"></i>
+                    <div>
+                        <strong>Помогает и подсказывает</strong>
+                        <p>Предлагает, как анализировать данные, строит код, делает выводы.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="compare-section">
+    <h2 class="section-title">Чем отличается от ChatGPT</h2>
+    <div class="compare-table">
+        <div class="compare-header">
+            <div></div>
+            <div>ChatGPT</div>
+            <div>Brain4BI</div>
+        </div>
+        <div class="compare-row">
+            <div class="compare-label">
+                <i data-lucide="x" class="lucide-icon"></i> Универсальность
+            </div>
+            <div>Универсальный помощник: текст, код, разговоры</div>
+            <div>Сфокусирован на BI и аналитике</div>
+        </div>
+        <div class="compare-row">
+            <div class="compare-label">
+                <i data-lucide="check" class="lucide-icon"></i> Работа с данными
+            </div>
+            <div>Только вручную загруженные файлы (CSV, Excel)</div>
+            <div>Доступ к файлам, базам данных, облачным хранилищам</div>
+        </div>
+        <div class="compare-row">
+            <div class="compare-label">
+                <i data-lucide="check" class="lucide-icon"></i> Визуализация данных
+            </div>
+            <div>Может строить графики и таблицы, но с ограничениями по объёму и интерактивности</div>
+            <div>Специализирован для больших объёмов данных и BI-визуализаций</div>
+        </div>
+        <div class="compare-row">
+            <div class="compare-label">
+                <i data-lucide="check" class="lucide-icon"></i> Подсказки и сценарии
+            </div>
+            <div>Даёт общие ответы без привязки к аналитическим задачам</div>
+            <div>Понимает BI-контекст, подсказывает, что ещё проанализировать</div>
+        </div>
+        <div class="compare-row">
+            <div class="compare-label">
+                <i data-lucide="check" class="lucide-icon"></i> Конфиденциальность
+            </div>
+            <div>Данные обрабатываются в облаке OpenAI</div>
+            <div>Код исполняется в изолированной среде, данные остаются у вас</div>
+        </div>
+        <div class="compare-row">
+            <div class="compare-label">
+                <i data-lucide="check" class="lucide-icon"></i> Модель ИИ
+            </div>
+            <div>Только облачные модели (OpenAI)</div>
+            <div>Локальные LLM или автономные модели на вашем сервере (например, Ollama)</div>
+        </div>
+    </div>
+</section>
+
+<section class="tech-section">
+    <h2 class="section-title">Технологии и безопасность</h2>
+    <div class="tech-container">
+
+        <div class="tech-item">
+            <img src="/assets/docker.png"/>
+            <h3>Изолированное выполнение</h3>
+            <p>Код запускается в Docker-контейнерах. Безопасно и воспроизводимо.</p>
+        </div>
+
+        <div class="tech-item">
+            <img src="/assets/security.png"/>
+            <h3>Данные остаются у вас</h3>
+            <p>Мы не передаём данные — всё локально.</p>
+        </div>
+
+        <div class="tech-item">
+            <img src="/assets/llm.png"/>
+            <h3>Локальные и облачные LLM</h3>
+            <p>Используйте OpenAI, Ollama, Mistral и другие.</p>
+        </div>
+
+        <div class="tech-item">
+            <img src="/assets/rust.png"/>
+            <h3>Написано на Rust</h3>
+            <p>Rust даёт скорость и безопасность системного уровня.</p>
+        </div>
+
+        <div class="tech-item">
+            <img src="/assets/selfhosted.png"/>
+            <h3>Self-hosted</h3>
+            <p>Разворачивается на вашей инфраструктуре.</p>
+        </div>
+
+        <div class="tech-item">
+            <img src="/assets/opensource.png"/>
+            <h3>Open Source-проект</h3>
+            <p>Открытый код — кастомизируйте под себя.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-grid">
+
+        <div class="footer-brand">
+            <img src="/assets/logo_mint.png" alt="Brain4BI" class="logo-image">
+            <p class="footer-description">Аналитика в чате — где фраза становится диаграммой</p>
+        </div>
+
+        <div class="footer-links">
+            <p><a href="#how-it-works">Как это работает</a></p>
+            <p><a href="#use-cases">Сценарии</a></p>
+            <p><a href="#demo">Попробовать</a></p>
+        </div>
+
+        <div class="footer-contact">
+<!--            <p><i data-lucide="mail" class="footer-icon"></i> <a href="mailto:hello@brain4bi.org">hello@brain4bi.org</a></p>-->
+<!--            <p><i data-lucide="github" class="footer-icon"></i> <a href="https://github.com/brain4bi">GitHub</a></p>-->
+<!--            <p><i data-lucide="send" class="footer-icon"></i> <a href="https://t.me/brain4bi">Telegram</a></p>-->
+                        <p><i data-lucide="mail" class="footer-icon"></i> <a href="#">hello@brain4bi.org</a></p>
+                        <p><i data-lucide="github" class="footer-icon"></i> <a href="#">GitHub</a></p>
+                        <p><i data-lucide="send" class="footer-icon"></i> <a href="#">Telegram</a></p>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Brain4BI. Все права защищены.</p>
+    </div>
+</footer>
+{% endblock content %}
+
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                
+                // Изменяем иконку при открытии/закрытии меню
+                const icon = mobileMenuToggle.querySelector('.lucide-icon');
+                if (navLinks.classList.contains('active')) {
+                    icon.setAttribute('data-lucide', 'x');
+                } else {
+                    icon.setAttribute('data-lucide', 'menu');
+                }
+                
+                // Перерисовка иконки (если используется библиотека Lucide)
+                if (window.lucide) {
+                    lucide.createIcons();
+                }
+            });
+        }
+    });
+</script>
+{% endblock scripts %}
